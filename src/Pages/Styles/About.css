@@ -1,0 +1,41 @@
+.About {
+    position: relative;
+    margin: 50px;
+    background-color: rgba(255, 255, 255, 0.185);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    /* height: 550px; */
+    
+}
+
+.AboutMeC{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.Lap{
+    height: 500px;
+    filter: grayscale(100%);
+    border-radius: 12px;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.AbtContent{
+    color: #fff;
+    text-align: left;
+}
+@media screen and (max-width: 575px) {
+    .About{
+        /* height: 800px; */
+        margin: 30px 20px;
+        padding: 40px;
+    }
+    
+    .AboutMeC{
+        flex-direction: column-reverse;
+    }
+}
