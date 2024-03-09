@@ -23,6 +23,9 @@
         text-align: center;
         font-size: 14px;
         font-weight: 300;
+        span{
+            font-weight: 500;
+        }
     }
 }
 
