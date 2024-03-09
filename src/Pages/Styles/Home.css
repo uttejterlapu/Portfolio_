@@ -6,7 +6,6 @@ grey : F6F5F5
 */
 
 .main {
-    background-color: #0C359E;
     padding: 50px;
 }
 
@@ -48,6 +47,12 @@ grey : F6F5F5
     /* filter: contrast(29); */
     /* filter: grayscale(); */
     /* filter: saturate(); */
+
+}
+
+.mypic:hover{
+    filter: grayscale();
+    transition: 1s ease-in-out;
 }
 
 .home-main {

@@ -2,3 +2,24 @@
     background-color: #0C359E;
 }
 
+.dark{
+    position: fixed;
+    bottom: 25px;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 40px;
+    border: 2px solid black; 
+    padding-inline: 0px;
+    padding: block 0px; ;
+    img{
+        width: 20px;
+        margin: 0;
+        padding: 0;
+        float: center;
+    }
+}
