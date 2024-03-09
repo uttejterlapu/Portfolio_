@@ -8,7 +8,7 @@ const AboutMe = () => {
         <img className='person' src={Person} alt='person svg' />
         <div className='content-about'>
           <p>
-            Am a Passionate Web Developer and Student at Gandhi Institue of Technology and Management Currently pursuing B.Tech 3rd Year Computer Science and Engineering with Specialization in Cyber Security.
+          Greetings! I'm Uttej Terlapu, a driven web developer and Cyber Security enthusiast currently pursuing my B.Tech in Computer Science at Gandhi Institute of Technology and Management. With a knack for crafting engaging digital solutions and a focus on cybersecurity, I'm committed to pushing boundaries and making a positive impact in the tech world. Let's collaborate and create something remarkable!
           </p>
         </div>
       </div>
