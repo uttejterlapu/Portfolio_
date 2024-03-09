@@ -1,0 +1,50 @@
+.certi {
+    margin: 50px;
+
+    h1 {
+        color: #FFE3CA;
+    }
+    .certi-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+        img {
+            width: 250px;
+        }
+        .linev{
+            width: 1px;
+            height: 200px;
+            background-color: #F6F5F5;
+        }
+        ul{
+            list-style-type: none;
+            text-align: left;
+            li{
+                color: #FFE3CA;
+                font-size: 14px;
+                a{
+                    color: #EE99C2;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:575px) {
+    .certi {
+        margin: 20px;
+        .certi-container{
+            flex-direction: column-reverse;
+            .linev{
+                display: none;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+}

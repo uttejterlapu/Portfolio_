@@ -1,0 +1,31 @@
+.contact-me{
+    background-color: #FFE3CA;
+    width: 100%;
+    padding: 20px;
+    h1{
+        text-align: center;
+        color: #000;
+    }
+    .contact-card-parent{
+        .contact-card{
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+            margin-block: 20px;
+            img{
+                margin-top: 25px;
+                width: 40px;
+            }
+        }
+    }
+    p{
+        text-align: center;
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    
+}

@@ -1,23 +1,60 @@
-import React from 'react';
+// import React, { useEffect, useState } from 'react';
 import '../Pages/Styles/Home.css';
 import Mypic from './Assests/Mypic.jpg'
+import About from './About';
+import Skills from './Skills';
+import Projects from './Projects';
+import Certificates from './Certificates';
+// import ContactMe from './ContactMe';
+// import { Box, Typography } from '@mui/material';
 
 const Home = () => {
+    const date = new Date()
+    var hrs = date.getHours();
+    var wish = '';
+    if (hrs >= 1 && hrs <= 11) {
+        wish = 'Morning';
+    }
+    else if (hrs >= 12 && hrs <= 15) {
+        wish = 'After Noon';
+    }
+    else if (hrs >= 16 && hrs <= 19) {
+        wish = 'Evening';
+    }
+    else if (hrs >= 20) {
+        wish = 'Night';
+    }
     return (
-        <div className='Home1'>
-            <div className='HomeContent'>
-                <div className='HomeLeft'>
-                    <div className='TextBold'>
-                        <p className='TextBoldC'>Uttej Terlapu</p>
-                        <p className='HContent'><span className='Tagline'>Web Developer</span> with a Focus on Frontend Development and Responsive Design. Proficient in HTML, CSS, JavaScript, and Vue.js. Demonstrated Success in Building Engaging Websites for Various Industries. Enthusiastic about Crafting Elegant Solutions to User Experience Challenges. Seeking Opportunities to Apply and Expand Skills in Web Development while Completing College Studies.
-                        <br/>
-                        To Know More About Me <a className='linking' href='/about'>Click Here</a> 
-                        </p>
+        <div className='main'>
+            <div id='homep' className='home'>
+                <div className='home-main'>
+                    <div>
+                        <h1>
+                            <span>Hi!! Good {wish}</span><br />
+                            Welcome to My Portfolio<br />
+                            I'am
+                            <span className='name'> Uttej Terlapu</span>
+                        </h1>
+                        <p>Web Developer</p>
                     </div>
+                    <img className='mypic' src={Mypic} alt='myimg' />
                 </div>
-                <div className='HomeRight'>
-                    <img className='Mypic' src={Mypic} alt='mypic'/>
-                </div>
+            </div>
+            <div className='line'></div>
+            <div id='about'>
+                <About />
+            </div>
+            <div className='line'></div>
+            <div id='skills'>
+                <Skills />
+            </div>
+            <div className='line'></div>
+            <div id='projects'>
+                <Projects />
+            </div>
+            <div className='line'></div>
+            <div id='certificates'>
+                <Certificates />
             </div>
         </div>
     );

@@ -1,41 +1,48 @@
-.About {
-    position: relative;
-    margin: 50px;
-    background-color: rgba(255, 255, 255, 0.185);
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 20px;
-    /* height: 550px; */
-    
-}
-
-.AboutMeC{
+.content-main-about {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
-}
-
-.Lap{
-    height: 500px;
-    filter: grayscale(100%);
-    border-radius: 12px;
-    float: left;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.AbtContent{
-    color: #fff;
-    text-align: left;
-}
-@media screen and (max-width: 575px) {
-    .About{
-        /* height: 800px; */
-        margin: 30px 20px;
-        padding: 40px;
+    .person {
+        width: 400px;
     }
-    
-    .AboutMeC{
-        flex-direction: column-reverse;
+}
+
+.about {
+    padding: 50px;
+
+    h1 {
+        color: #FFE3CA;
+        text-align: right;
+    }
+}
+
+.content-about {
+    background-color: #f6f5f54a;
+    padding-inline: 20px;
+    padding-block: 20px;
+    border-radius: 12px;
+
+    p {
+        font-size: 15px;
+        margin: 0px;
+        color: #fff;
+    }
+}
+
+.person {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 575px) {
+    .content-main-about {
+        flex-direction: column;
+        .person {
+            width: 100%;
+        }
+    }
+    .about {
+        padding: 20px;
+
     }
 }

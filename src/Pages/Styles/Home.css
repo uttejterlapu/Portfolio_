@@ -1,97 +1,96 @@
-.Home1 {
-    position: relative;
-    margin: 50px;
-    background-color: rgba(255, 255, 255, 0.185);
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 12px;
+/*
+blue : 0C359E
+pink : EE99C2
+cream : FFE3CA
+grey : F6F5F5
+*/
+
+.main {
+    background-color: #0C359E;
+    padding: 50px;
 }
 
-.HomeContent {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-inline: 50px;
+.home {
+    /* background-color: #FFE3CA; */
+    border-radius: 12px;
+    padding: 50px;
 }
 
-.HomeLeft{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.home h1 span {
+    /* font-size: 40px; */
+    color: #F6F5F5;
 }
-.HomeRight{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.TextBoldC{
-    font-size: 100px;
-    text-align: left;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    color: rgb(255, 255, 255);
-}
-.Mypic{
-    height: 500px;
-    width: 500px;
-    border-radius: 15px;
-    filter: grayscale(100%);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.Tagline{
-    color: #fff;
-    font-size: 22px;
-   
-}
-.HContent{
-    color: #fff;
-}
-.linking{
-    color: #fff;
-}
-@media screen and (max-width: 700px) {
-    .Home1{
-        height: 800px;
-        margin: 20px;
-        box-sizing: border-box;
-    }
-    .TextBoldC {
+
+.home h1 {
+    color: #F6F5F5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+
+    .name {
+        color: #FFE3CA;
         font-size: 50px;
     }
+}
 
-    .HomeContent{
-        flex-direction: column-reverse;
-        padding-inline: 30px;
-        padding-block: 30px;
-        text-align: left;
-    }
+.home p {
+    color: #EE99C2;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px;
 
-    .Mypic{
-        width: 100%;
-        height: 100%;
-    }
+}
 
-    .HomeRight{
-        display: block;
-        width: 100%;
-        height: 100%;
-        box-sizing: border-box;
+.mypic {
+    width: 300px;
+    border-radius: 12px;
+    margin-block: 20px;
+    float: center;
+    /* filter: contrast(29); */
+    /* filter: grayscale(); */
+    /* filter: saturate(); */
+}
+
+.home-main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.line{
+    height: 1px;
+    background-color: #fff;
+    border-radius: 20px;
+
+}
+
+@media screen and (min-width: 576px) {
+    .home-main {
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
     }
 }
 
-@media screen and (min-width: 701px){
-    .Home1{
-      height: 550px;
+@media screen and (max-width: 575px) {
+    .home h1 {
+        font-size: 28px;
+        .name {
+            font-size: 35px;
+        }
     }
-} 
+
+    .home-main {
+        flex-direction: column;
+    }
+
+    .main {
+        padding: 20px;
+    }
+
+    .home {
+        padding: 20px;
+    }
+
+    .mypic{
+        width: 100%;
+    }
+}

@@ -1,0 +1,48 @@
+.skill{
+    padding: 50px;
+    h1{
+        color: #FFE3CA;
+    }
+    .skill-main{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        margin-block: 20px;
+        .skill-card{
+            background-color: aliceblue;
+            border-radius: 10px;
+            padding: 20px;
+            width: 150px;
+            .Skill-img-comp{
+                width: 30px;
+            }
+            .Bline{
+                background-color: #000;
+                height: 2px;
+                border-radius: 10px;
+                margin-block: 10px;
+            }
+            h5{
+                font-size: 15px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 575px){
+    .skill{
+        padding: 20px;
+        .skill-main{
+            .skill-card{
+                width: 150px;
+            }
+        }
+    }
+}

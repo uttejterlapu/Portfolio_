@@ -1,0 +1,61 @@
+.pro-main {
+    padding: 50px;
+
+    h1 {
+        color: #FFE3CA;
+        margin-bottom: 25px;
+    }
+
+    .pro-component {
+        margin: 0 auto;
+        background-color: #FFE3CA;
+        border-radius: 12px;
+        padding: 20px;
+        width: 250px;
+        .pro-card {
+            padding: 10px;
+            h5 {
+                font-size: 16px;
+            }
+
+            .Bline {
+                background-color: #000;
+                height: 1px;
+                margin-block: 12px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+            div {
+                display: flex;
+                gap: 10px;
+                button {
+                    text-decoration: none;
+                    border: none;
+                    background-color: black;
+                    color: #FFE3CA;
+                    padding: 10px;
+                    font-size: 12px;
+                    border-radius: 12px;
+                    width: 100px;
+                }
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .pro-main {
+        padding: 20px;
+        .pro-component {
+            width: 100%;
+            .pro-card{
+                div{
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
