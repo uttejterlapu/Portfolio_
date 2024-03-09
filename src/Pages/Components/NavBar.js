@@ -8,13 +8,13 @@ function BasicExample() {
     const isMobile = useMediaQuery({ maxWidth: 576 }); // Define breakpoint for mobile screens
 
     return (
-        <Navbar expand="lg" className="bg-body-secodary sticky-top" style={{ backgroundColor: '#EEEEEE' , position: 'sticky'}}>
+        <Navbar expand="lg" className="bg-body-secodary sticky-top" style={{ backgroundColor: '#FFE3CA' , position: 'sticky'}}>
             <Container>
                 {/* Apply conditional classes */}
-                <Navbar.Brand href="/" style={{ fontSize: '1.7rem'}} className={isMobile ? "" : "mx-auto"} >Portfolio</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Brand href="/" style={{ fontSize: '1.5rem'}} className={isMobile ? "" : "mx-auto"} >Portfolio</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" style={{border:'none'}}/>
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mx-auto" style={{ fontSize: '1.1rem'}}>
+                    <Nav className="mx-auto" style={{ fontSize: '1rem'}}>
                         <Nav.Link href="#homep">Home</Nav.Link>
                         <Nav.Link href="#about">About</Nav.Link>
                         <Nav.Link href="#skills">Skills</Nav.Link>
