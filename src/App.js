@@ -6,6 +6,7 @@ import './App.css';
 import Sun from './Pages/Assests/sun.svg';
 import Dark from './Pages/Assests/dark.svg';
 import { Color } from 'three';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -30,6 +31,8 @@ function App() {
       <button onClick={handleMood} className='dark'>
         <img src={isDarkMode ? Dark : Sun} alt={isDarkMode ? "Dark Mode" : "Light Mode"} />
       </button>
+
+      <Analytics/>
     </div>
   );
 }
